@@ -1,4 +1,4 @@
-public class User extend Person
+public class User extends Person
 {
     private Page page;
     private static Administrator administrator;
