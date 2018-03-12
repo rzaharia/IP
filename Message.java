@@ -1,9 +1,11 @@
 public class Message {
     User sender, receiver;
-    int messageToSend = 0;
+    String messageToSend;
 
-    Message(User sender, User receiber, int message){
-
+    Message(User sender, User receiber, String message){
+        this.sender = sender;
+        this.receiver = receiber;
+        this.messageToSend = message;
     }
 
     void sendMessage(){

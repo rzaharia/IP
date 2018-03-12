@@ -19,7 +19,7 @@ public class Main {
         Image image=new Image("image1",new Date(),"asffdfbbv");
         System.out.println(image);
 
-        Message message=new Message(u1,u2,1);
+        Message message=new Message(u1,u2, "measj");
         System.out.println(message);
 
         Page page=new Page("page1","fotografii",u2);
@@ -40,6 +40,7 @@ public class Main {
 
         Video video = new Video("date pentru video");
         System.out.println(video);
+
 
     }
 }

@@ -10,4 +10,11 @@ public class PhoneNumber {
             }
             return(false);
         }
+
+    @Override
+    public String toString() {
+        return "PhoneNumber{" +
+                "phone='" + phone + '\'' +
+                '}';
+    }
 }

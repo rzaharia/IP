@@ -14,6 +14,7 @@ import java.util.Objects;
 public class Post {
     Image image;
     private String id;
+    double price = 0;
     List<Comment> comments;
     public Post(String id,Image image){
         this.id=id;
@@ -45,6 +46,14 @@ public class Post {
             return false;
         }
         return true;
+    }
+
+    public int getType(){
+        return(0);
+    }
+
+    public void addPrice(double price){
+        this.price = price;
     }
 
     @Override

@@ -6,6 +6,7 @@ public class User extends Person
     User(String name,String email,String username,String passHash)
     {
         super(name,email,username,passHash);
+        //System.out.println(name);
     }
 
     public Page getPage()
@@ -21,14 +22,17 @@ public class User extends Person
     public void createReport(String message,User sender,User receiver)
     {
         Report report= new Report(message,sender,receiver);
-        report.createReport();
-        administrator.addReport(report);
+        administrator.addReport(report.createReport());
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "page=" + page +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", username='" + username + '\'' +
+                ", passHash='" + passHash + '\'' +
+                ", isBanned=" + isBanned +
                 '}';
     }
 }

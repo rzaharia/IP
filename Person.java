@@ -3,6 +3,7 @@ public class Person {
     String email;
     String username;
     String passHash;
+    boolean isBanned = false;
     Person(String name, String email, String username, String passHash){
         this.name = name;
         this.email = email;
