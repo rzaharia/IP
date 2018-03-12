@@ -9,4 +9,14 @@ public class Person {
         this.username = username;
         this.passHash = passHash;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", username='" + username + '\'' +
+                ", passHash='" + passHash + '\'' +
+                '}';
+    }
 }

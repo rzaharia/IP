@@ -24,4 +24,13 @@ public class Image {
     public String getId(){
         return postId;
     }
+
+    @Override
+    public String toString() {
+        return "Image{" +
+                "date=" + date +
+                ", imageRepresentation='" + imageRepresentation + '\'' +
+                ", postId='" + postId + '\'' +
+                '}';
+    }
 }

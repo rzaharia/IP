@@ -46,5 +46,13 @@ public class Post {
         }
         return true;
     }
-  
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "image=" + image +
+                ", id='" + id + '\'' +
+                ", comments=" + comments +
+                '}';
+    }
 }

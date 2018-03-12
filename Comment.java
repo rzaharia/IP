@@ -28,4 +28,14 @@ public class Comment {
     public Date getDate(){
         return date;
     }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "id='" + id + '\'' +
+                ", commentText='" + commentText + '\'' +
+                ", owner=" + owner +
+                ", date=" + date +
+                '}';
+    }
 }

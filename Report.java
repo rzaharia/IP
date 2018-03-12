@@ -16,4 +16,14 @@ public class Report
         this.receiver=receiver;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Report{" +
+                "message='" + message + '\'' +
+                ", sender=" + sender +
+                ", receiver=" + receiver +
+                ", postReported=" + postReported +
+                '}';
+    }
 }

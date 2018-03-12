@@ -47,4 +47,14 @@ public class Page {
     public User getOwner(){
         return owner;
     }
+
+    @Override
+    public String toString() {
+        return "Page{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", posts=" + posts +
+                ", owner=" + owner +
+                '}';
+    }
 }

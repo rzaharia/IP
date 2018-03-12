@@ -5,4 +5,13 @@ public class Message {
     void sendMessage(){
 
     }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "sender=" + sender +
+                ", receiver=" + receiver +
+                ", messageToSend=" + messageToSend +
+                '}';
+    }
 }

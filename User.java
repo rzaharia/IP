@@ -24,4 +24,11 @@ public class User extends Person
         report.createReport(message,sender,receiver);
         administrator.addReport(report);
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "page=" + page +
+                '}';
+    }
 }
