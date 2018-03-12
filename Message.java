@@ -2,6 +2,10 @@ public class Message {
     User sender, receiver;
     int messageToSend = 0;
 
+    Message(User sender, User receiber, int message){
+
+    }
+
     void sendMessage(){
 
     }

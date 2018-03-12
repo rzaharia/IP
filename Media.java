@@ -3,9 +3,9 @@ import java.util.Date;
 public class Media
 {
     private int id;
-    private Date date;
+    private String date;
 
-    public Media(Date date)
+    public Media(String date)
     {
         this.date = date;
     }
@@ -15,7 +15,7 @@ public class Media
         return id;
     }
 
-    public Date getDate()
+    public String getDate()
     {
         return date;
     }

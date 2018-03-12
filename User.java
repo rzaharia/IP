@@ -20,8 +20,8 @@ public class User extends Person
 
     public void createReport(String message,User sender,User receiver)
     {
-        Report report= new Report();
-        report.createReport(message,sender,receiver);
+        Report report= new Report(message,sender,receiver);
+        report.createReport();
         administrator.addReport(report);
     }
 

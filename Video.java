@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class Video extends Media
 {
-    public Video(Date date)
+    public Video(String date)
     {
         super(date);
     }

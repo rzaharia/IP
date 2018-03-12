@@ -4,16 +4,15 @@ public class Report
     private User sender,receiver;
     private Post postReported;
 
-    Report()
-    {
-
-    }
-
-    Report createReport(String message,User sender,User receiver)
+    Report(String message, User sender, User receiver)
     {
         this.message=message;
         this.sender=sender;
         this.receiver=receiver;
+    }
+
+    Report createReport()
+    {
         return this;
     }
 

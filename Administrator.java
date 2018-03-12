@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Administrator extends Person {
     List<Report> reports = new ArrayList<>();
+    Profile profille;
     Administrator(String name, String email, String username, String passHash){
         super(name, email, username, passHash);
     }
